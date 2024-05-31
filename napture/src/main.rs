@@ -407,7 +407,7 @@ fn fetch_dns(url: String) -> String {
             lualog!("debug", format!("Failed to parse response body from DNS API. Error code: {}. Returning original URL.", status.as_u16()));
             if status.as_u16() == 404 {
                 lualog!("debug", "No results found for this DNS request. Trying to browse for it instead.");
-               return "https://github.com/the-broz/dingle-urlbrowse".to_string();
+               return "https://github.com/face-hh/dingle-frontend".to_string();
             } else {
                 // Something else went wrong and we shouldn't browse for it.
             return url
